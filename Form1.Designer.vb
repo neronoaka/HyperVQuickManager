@@ -34,6 +34,7 @@ Partial Class Form1
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
         Me.PropertyGrid1 = New System.Windows.Forms.PropertyGrid()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -51,7 +52,6 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.MenuStrip1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -176,6 +176,16 @@ Partial Class Form1
         Me.PropertyGrid1.Size = New System.Drawing.Size(706, 240)
         Me.PropertyGrid1.TabIndex = 1
         Me.PropertyGrid1.ToolbarVisible = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(55, 15)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
         '
         'ToolStrip1
         '
@@ -318,16 +328,6 @@ Partial Class Form1
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 15)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
         '
         'Form1
         '
