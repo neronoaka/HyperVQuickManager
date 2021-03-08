@@ -97,9 +97,9 @@ Public Class Form1
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         If IsNothing(VM) = False Then
-            Label1.Text = "CPU Usage:" & VM.CPUUsage & "%"
+            ProgressBar1.Value = VM.CPUUsage
         Else
-            Label1.Text = Nothing
+            ProgressBar1.Value = 0
         End If
     End Sub
 

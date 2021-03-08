@@ -34,6 +34,7 @@ Partial Class Form1
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
         Me.PropertyGrid1 = New System.Windows.Forms.PropertyGrid()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
@@ -161,6 +162,7 @@ Partial Class Form1
         '
         'SplitContainer2.Panel2
         '
+        Me.SplitContainer2.Panel2.Controls.Add(Me.ProgressBar1)
         Me.SplitContainer2.Panel2.Controls.Add(Me.Label1)
         Me.SplitContainer2.Size = New System.Drawing.Size(706, 585)
         Me.SplitContainer2.SplitterDistance = 240
@@ -177,15 +179,23 @@ Partial Class Form1
         Me.PropertyGrid1.TabIndex = 1
         Me.PropertyGrid1.ToolbarVisible = False
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 15)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(706, 21)
+        Me.ProgressBar1.TabIndex = 1
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 15)
+        Me.Label1.Size = New System.Drawing.Size(69, 15)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = "CPU 使用"
         '
         'ToolStrip1
         '
@@ -393,4 +403,5 @@ Partial Class Form1
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents PropertyGrid1 As PropertyGrid
     Friend WithEvents Label1 As Label
+    Friend WithEvents ProgressBar1 As ProgressBar
 End Class
